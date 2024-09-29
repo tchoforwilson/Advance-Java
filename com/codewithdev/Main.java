@@ -1,15 +1,12 @@
 package com.codewithdev;
 
-import com.codewithdev.generics.List;
+import com.codewithdev.generics.GenericList;
 import com.codewithdev.generics.User;
 
 public class Main {
     public static void main(String[] args) {
-        var list = new List();
-        list.add(Integer.valueOf(1));
-        list.add("1");
+        var list = new GenericList<User>();
         list.add(new User());
-
-        int number = (int) list.get(2);
+        User user = list.get(0);
     }
 }
