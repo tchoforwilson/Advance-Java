@@ -1,15 +1,10 @@
 package com.codewithdev;
 
-import java.io.IOException;
-
-import com.codewithdev.exceptions.ExceptionsDemo;
+import com.codewithdev.generics.List;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            ExceptionsDemo.show();
-        } catch (Throwable e) {
-            System.out.println("An unexpected error occured.");
-        }
+        var list = new List();
+        list.add(1);
     }
 }
