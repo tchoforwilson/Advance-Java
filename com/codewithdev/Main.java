@@ -5,8 +5,11 @@ import com.codewithdev.generics.User;
 
 public class Main {
     public static void main(String[] args) {
-        var list = new GenericList<User>();
-        list.add(new User());
-        User user = list.get(0);
+        // int -> Integer
+        // float -> Float
+        // boolean -> Boolean
+        GenericList<Integer> numbers = new GenericList<>();
+        numbers.add(1); // Boxing
+        int number = numbers.get(0); // Unboxing
     }
 }
