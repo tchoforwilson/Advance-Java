@@ -1,5 +1,5 @@
 package com.codewithdev.generics;
 
-public class User implements Comparable {
+public class User {
 
 }
