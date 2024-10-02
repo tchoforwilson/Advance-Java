@@ -18,7 +18,7 @@ public class Utils {
 
     // class CAP#1 extends User {}
     // class Instructor extends User {}
-    public static void printUsers(GenericList<? super User> users) {
+    public static void printUsers(GenericList<? extends User> users) {
         GenericList<Object> temp = new GenericList<>();
 
         Object x = users.get(0);
