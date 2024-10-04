@@ -8,8 +8,11 @@ public class CollectionsDemo {
     public static void show() {
         Collection<String> collection = new ArrayList<String>();
         Collections.addAll(collection, "a", "b", "c");
-        Object[] objectArray = collection.toArray();
-        String[] strinArray = collection.toArray(new String[0]);
 
+        Collection<String> other = new ArrayList<String>();
+        other.addAll(collection);
+
+        System.out.println(collection == other);
+        System.out.println(collection.equals(other));
     }
 }
