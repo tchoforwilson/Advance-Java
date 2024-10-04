@@ -1,10 +1,9 @@
 package com.codewithdev;
 
-import com.codewithdev.collections.CollectionsDemo;
-import com.codewithdev.generics.GenericList;
+import com.codewithdev.collections.ListDemo;
 
 public class Main {
     public static void main(String[] args) {
-        CollectionsDemo.show();
+        ListDemo.show();
     }
 }
