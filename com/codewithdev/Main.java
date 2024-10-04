@@ -1,14 +1,10 @@
 package com.codewithdev;
 
+import com.codewithdev.collections.CollectionsDemo;
 import com.codewithdev.generics.GenericList;
 
 public class Main {
     public static void main(String[] args) {
-        var list = new GenericList<String>();
-        list.add("a");
-        list.add("b");
-
-        for (var item : list)
-            System.out.println(item);
+        CollectionsDemo.show();
     }
 }
