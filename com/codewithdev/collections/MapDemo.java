@@ -10,7 +10,8 @@ public class MapDemo {
         map.put(customer1.getEmail(), customer1);
         map.put(customer2.getEmail(), customer2);
 
-        map.replace("mary@example.com", new Customer("Mary Anne", "mary@example.com"));
-        System.out.println(map);
+        for (var key : map.keySet()) {
+            System.out.println(key);
+        }
     }
 }
