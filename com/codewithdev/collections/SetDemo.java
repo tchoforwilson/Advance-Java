@@ -1,17 +1,12 @@
 package com.codewithdev.collections;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class SetDemo {
     public static void show() {
-        Set<String> set = new HashSet<>();
-
-        set.add("Sky");
-        set.add("is");
-        set.add("blue");
-        set.add("blue");
-
+        Collection<String> collection = new ArrayList<>();
+        Collections.addAll(collection, "a", "b", "c", "c");
+        Set<String> set = new HashSet<>(collection);
         System.out.println(set);
     }
 }
