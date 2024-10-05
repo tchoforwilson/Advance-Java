@@ -11,7 +11,7 @@ public class MapDemo {
         map.put(customer2.getEmail(), customer2);
 
         var unknown = new Customer("Unknown", "");
-        var customer = map.getOrDefault("jean@example.com", unknown);
-        System.out.println(customer);
+        var exists = map.containsKey("jean@example.com");
+        System.out.println(exists);
     }
 }
