@@ -10,8 +10,8 @@ public class MapDemo {
         map.put(customer1.getEmail(), customer1);
         map.put(customer2.getEmail(), customer2);
 
-        for (var entry : map.entrySet()) {
-            System.out.println(entry);
+        for (var customer : map.values()) {
+            System.out.println(customer);
         }
     }
 }
