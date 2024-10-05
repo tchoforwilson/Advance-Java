@@ -10,8 +10,7 @@ public class MapDemo {
         map.put(customer1.getEmail(), customer1);
         map.put(customer2.getEmail(), customer2);
 
-        var unknown = new Customer("Unknown", "");
-        var exists = map.containsKey("jean@example.com");
-        System.out.println(exists);
+        map.replace("mary@example.com", new Customer("Mary Anne", "mary@example.com"));
+        System.out.println(map);
     }
 }
