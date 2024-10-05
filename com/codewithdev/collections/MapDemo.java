@@ -1,14 +1,17 @@
 package com.codewithdev.collections;
 
+import java.util.*;
+
 public class MapDemo {
     public static void show() {
-        // Java: Maps
-        // C#: Dictionary
-        // Python: Dictionary
-        // JavaScript: Objects
-        // var person = { name: "a"}
-        /*
-         * Javascript objects are hash tables under the hood.
-         */
+        var customer1 = new Customer("Mary", "mary@example.com");
+        var customer2 = new Customer("James", "james@example.com");
+        Map<String, Customer> map = new HashMap<>();
+        map.put(customer1.getEmail(), customer1);
+        map.put(customer2.getEmail(), customer2);
+
+        var unknown = new Customer("Unknown", "");
+        var customer = map.getOrDefault("jean@example.com", unknown);
+        System.out.println(customer);
     }
 }
