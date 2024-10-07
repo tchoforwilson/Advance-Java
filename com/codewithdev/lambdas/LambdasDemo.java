@@ -1,18 +1,11 @@
 package com.codewithdev.lambdas;
 
 public class LambdasDemo {
-    public static void show() {
+    public String prefix = "-";
 
-        greet(message -> System.out.println(message));
+    public void show() {
 
-        Printer printer = message -> System.out.println(message);
-
-        greet(new Printer() {
-            @Override
-            public void print(String message) {
-                System.out.println(message);
-            }
-        });
+        greet(message -> System.out.println(prefix + message));
     }
 
     public static void greet(Printer printer) {
