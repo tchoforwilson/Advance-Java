@@ -1,20 +1,14 @@
 package com.codewithdev.lambdas;
 
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class LambdasDemo {
 
     public static void show() {
-        // "key:value"
-        // first: "key=value"
-        // second: "{key:value}"
-        Function<String, String> replaceColon = str -> str.replace(":", "=");
-        Function<String, String> addBraces = str -> "{" + str + "}";
+        Predicate<String> isLongerThan5 = str -> str.length() > 5;
 
-        // Declarative Programming
-        var result = replaceColon.andThen(addBraces).apply("key:value");
-
-        result = addBraces.compose(replaceColon).apply("key:value");
+        var result = isLongerThan5.test("sky");
         System.out.println(result);
     }
 }
