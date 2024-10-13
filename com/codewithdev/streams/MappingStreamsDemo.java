@@ -1,14 +1,11 @@
 package com.codewithdev.streams;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 public class MappingStreamsDemo {
     public static void show() {
-        List<Movie> movies = List.of(
-                new Movie("Terminator", 10),
-                new Movie("Avatar", 15),
-                new Movie("Secret Road", 20));
-
-        movies.stream().map(movie -> movie.getTitle()).forEach(title -> System.out.println(title));
+        var stream = Stream.of(List.of(1, 2, 3), List.of(4, 5, 6));
+        stream.flatMap(list -> list.stream()).forEach(n -> System.out.println(n));
     }
 }
