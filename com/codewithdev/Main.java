@@ -1,9 +1,9 @@
 package com.codewithdev;
 
-import com.codewithdev.streams.MappingStreamsDemo;
+import com.codewithdev.streams.FilteringElementsDemo;
 
 public class Main {
     public static void main(String[] args) {
-        MappingStreamsDemo.show();
+        FilteringElementsDemo.show();
     }
 }
