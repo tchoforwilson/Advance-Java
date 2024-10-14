@@ -10,9 +10,9 @@ public class ReducersDemo {
                 new Movie("Avatar", 30),
                 new Movie("Secreet Road", 20));
 
-        var result = movies.stream().anyMatch(movie -> movie.getLikes() > 20);
+        var result = movies.stream().findFirst().get();
 
-        System.out.println(result);
+        System.out.println(result.getTitle());
 
     }
 }
