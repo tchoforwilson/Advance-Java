@@ -1,9 +1,9 @@
 package com.codewithdev;
 
-import com.codewithdev.streams.PeekingElementsDemo;
+import com.codewithdev.streams.ReducersDemo;
 
 public class Main {
     public static void main(String[] args) {
-        PeekingElementsDemo.show();
+        ReducersDemo.show();
     }
 }
