@@ -16,11 +16,11 @@ public class ReducersDemo {
         // [25, 30, 20]
         // [55, 20]
         // [75]
-        Optional<Integer> sum = movies.stream()
+        Integer sum = movies.stream()
                 .map(movie -> movie.getLikes())
-                .reduce(Integer::sum);
+                .reduce(0, Integer::sum);
 
-        System.out.println(sum.orElse(0));
+        System.out.println(sum);
 
     }
 }
