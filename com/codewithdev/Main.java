@@ -1,9 +1,9 @@
 package com.codewithdev;
 
-import com.codewithdev.streams.ReducersDemo;
+import com.codewithdev.streams.CollectorsDemo;
 
 public class Main {
     public static void main(String[] args) {
-        ReducersDemo.show();
+        CollectorsDemo.show();
     }
 }
