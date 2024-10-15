@@ -17,7 +17,8 @@ public class CollectorsDemo {
 
         var result = movies.stream()
                 .filter(movie -> movie.getLikes() > 10)
-                .collect(Collectors.toMap(Movie::getTitle, Function.identity()));
+                .map(Movie::getTitle)
+                .collect(Collectors.joining(", "));
 
         System.out.println(result);
     }
