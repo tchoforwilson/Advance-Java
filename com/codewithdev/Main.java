@@ -1,9 +1,9 @@
 package com.codewithdev;
 
-import com.codewithdev.streams.GroupingElementDemo;
+import com.codewithdev.streams.PrimitiveTypeStreamsDemo;
 
 public class Main {
     public static void main(String[] args) {
-        GroupingElementDemo.show();
+        PrimitiveTypeStreamsDemo.show();
     }
 }
