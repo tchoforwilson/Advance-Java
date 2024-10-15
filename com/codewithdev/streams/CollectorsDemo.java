@@ -1,6 +1,7 @@
 package com.codewithdev.streams;
 
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class CollectorsDemo {
@@ -16,7 +17,7 @@ public class CollectorsDemo {
 
         var result = movies.stream()
                 .filter(movie -> movie.getLikes() > 10)
-                .collect(Collectors.toMap(Movie::getTitle, Movie::getLikes));
+                .collect(Collectors.toMap(Movie::getTitle, Function.identity()));
 
         System.out.println(result);
     }
