@@ -1,6 +1,7 @@
 package com.codewithdev.concurrency;
 
 public class DownloadStatus {
+    private volatile boolean isDone;
     private int totalBytes;
     private int totalFiles;
     private Object totalBytesLock = new Object();
@@ -12,10 +13,16 @@ public class DownloadStatus {
         }
     }
 
-    public void incrementTotalFiles() {
-        synchronized (totalFilesLock) {
-            totalFiles++;
-        }
+    public synchronized void incrementTotalFiles() {
+        totalFiles++;
+    }
+
+    public boolean isDone() {
+        return isDone;
+    }
+
+    public void done() {
+        this.isDone = true;
     }
 
     public int getTotalFiles() {
