@@ -1,9 +1,9 @@
 package com.codewithdev;
 
-import com.codewithdev.executors.ExecutorsDemo;
+import com.codewithdev.executors.CompletableFuturesDemo;
 
 public class Main {
     public static void main(String[] args) {
-        ExecutorsDemo.show();
+        CompletableFuturesDemo.show();
     }
 }
